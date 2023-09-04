@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cf5ad8108a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>Netflix | Watch TV shows online, Watch movies online</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.svg" alt="" class="logo-img">
+        </div>
+        <a href="" class="btn" id="login-btn">
+            Sign In
+        </a>
+    </header>
+    <section id="signup">
+        <div id="signup-container">
+            <p class="title">Unlimited movies, TV shows, and more</p>
+            <p class="hide-on-sm">Watch anywhere. Cancel anytime.</p>
+            <p style="margin-top: 10px;">Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="form-group" action="" method="post">
+                <div class = "input-group">
+                    <input type="email" required name="email" id="email-1">
+                    <label for="email" class="">Email address</label>
+                    <div class="error-box">
+                        
+                    </div>
+                </div>
+                <button type=sumbit class="btn" style="font-size: 1.2em;">
+                    Get Started
+                    <!-- Not good. Use img tag -->
+                    <img src="img/arrow.svg" alt="">
+                </button>
+            </form>
+        </div>
+        <a href="#enjoy-on-tv" class="next-section"></a>
+        <div class="section-end"></div>
+    </section>
+    <section id="enjoy-on-tv" class='short-section'>
+        <div style="display: flex; flex-direction: column; gap: 1.5rem; flex: 1; flex-basis: 400px;">
+            <p class="title">Enjoy on your TV</p>
+            <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+        <div id="tv-frame">
+            <video src="img/tv-video-loop.m4v" autoplay loop></video>
+        </div>
+        <div class="section-end"></div>
+        <a href="#download" class="next-section"></a>
+    </section>
+    <section id="download" class='short-section'>
+        <div id="phone-frame" class="image-container">
+            <img src="img/phone-stranger-things.jpg" width="600" alt="">
+            <div id="download-stranger-things" class="absolute-center-horizontal">
+                <img src="img/boxshot.png" alt="">
+                <div>
+                    <p style="font-weight: 800">Stranger things</p>
+                    <p style="font-size: small; color: blue">Downloading...</p>
+                </div>
+                <img src="img/download-icon.gif" alt="">
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 1.5rem; flex: 1; flex-basis: 400px;">
+            <p class="title">Download your shows to watch offline</p>
+            <p>Save your favorites easily and always have something to watch.</p>
+        </div>
+        <a href="#watch-everywhere" class="next-section"></a>
+        <div class="section-end"></div>
+    </section>
+    <section class="mini-section" id="watch-everywhere">
+        <div style="display: flex; flex-direction: column; gap: 1.5rem; flex: 1; flex-basis: 400px;">
+            <p class="title">Watch everywhere</p>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <div class="section-end"></div>
+    </section>
+    <section class="short-section" id="kids">
+        <div class="image-container">
+            <img src="img/kids-profile.png" alt="">
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 1.5rem; flex: 1; flex-basis: 400px;">
+            <p class="title">Create profiles for kids</p>
+            <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+        </div>
+        <a href="#faqs" class="next-section"></a>
+        <div class="section-end"></div>
+    </section>
+    <section id="faqs">
+        <p class="title">Frequently Asked Questions</p>
+        <ul id="faqs-list">
+            <li>
+                <div class="summary">What is Netflix?</div>
+                <div class="details">
+                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+                    <p>You can watch as much as you want, whenever you want without a single commercial – all for onelow monthly price. There's always something new to discover and new TV shows and movies areadded every week!</p>
+                </div>
+            </li>
+            <li>
+                    <div class="summary">How much does Netflix Cost?</div>
+                    <div class="details">
+                        <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from Rs250 to Rs1,100 a month. No extra costs, no contracts.</p>
+                    </div>
+            </li>
+            <li>
+                    <div class="summary">Where can I watch?</div>
+                    <div class="details">
+                        <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+                        <p>
+                        You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                        </p>
+                    </div>
+            </li>
+            <li>
+                    <div class="summary">How do I cancel?</div>
+                    <div class="details">
+                        <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                    </div>
+            </li>
+            <li>
+                    <div class="summary">What can I watch on Netflix?</div>
+                    <div class="details">
+                        <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                    </div>
+            </li>
+            <li>
+                    <div class="summary">Is Netflix good for kids?</div>
+                    <div class="details">
+                        <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.</p>
+                        <p>
+                        Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don't want kids to see.
+                        </p>
+                    </div>
+            </li>
+        </ul>
+        <p style="margin-top: 10px;">Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="form-group" action="" method="post">
+                <div class = "input-group">
+                    <input type="email" required name="email" id="email-2">
+                    <label for="email" class="">Email address</label>
+                    <div class="error-box">
+                        
+                    </div>
+                </div>
+                <button type=sumbit class="btn" style="font-size: 1.2em;">
+                    Get Started
+                    <!-- Not good. Use img tag -->
+                    <img src="img/arrow.svg" alt="">
+                </button>
+            </form>
+        <div class="section-end"></div>
+    </section>
+    <footer>
+        <a href="">Questions? Contact us.</a>
+        <div id="links-grid">
+            <a href="">FAQ</a>
+            <a href="">Help Center</a>
+            <a href="">Account</a>
+            <a href="">Media Center</a>
+            <a href="">Investor Relations</a>
+            <a href="">Jobs</a>
+            <a href="">Ways to watch</a>
+            <a href="">Terms of Use</a>
+            <a href="">Privacy</a>
+            <a href="">Cookie Preference</a>
+            <a href="">Corporate Information</a>
+            <a href="">Contact Us</a>
+            <a href="">Speed Test</a>
+            <a href="">Legal Notices</a>
+            <a href="">Only on Netflix</a>
+        </div>
+        <div id = "select-container">
+            <i class="fa-solid fa-globe absolute-center-vertical" style="color: white; position: absolute; left: 5px;"></i>
+            <select name="language" id="language">
+                <option value="english">English</option>
+            </select>
+            <span style="position: absolute; right: 20px; font-size: 8px;" class="absolute-center-vertical">▼</span>
+        </div>
+        <p>Netflix Pakistan</p>
+    </footer>
+</body>
+</html>
